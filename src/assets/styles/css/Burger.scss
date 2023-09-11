@@ -1,0 +1,94 @@
+@mixin media($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+.header__burger-btn {
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  z-index: 2;
+  cursor: pointer;
+
+  @include media(778px) {
+    display: block !important;
+    z-index: 100;
+  }
+}
+
+.header__burger-btn span {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  left: 5px;
+  background-color: black;
+  transition: background-color 0.3s, opacity 0.3s, transform 0.5s;
+  will-change: transform;
+}
+
+.header__burger-btn:hover span {
+  background-color: rgb(103, 103, 103);
+}
+
+.header__burger-btn span:nth-child(1) {
+  transform: translateY(-10px);
+}
+
+.header__burger-btn span:nth-child(2) {
+}
+
+.header__burger-btn span:nth-child(3) {
+  transform: translateY(10px);
+}
+
+.sliders{
+  margin-top: 140px !important;
+}
+
+/* Крестик */
+
+.nav.open .header__burger-btn span {
+  background-color: black;
+}
+
+.nav.open .header__burger-btn span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+
+.nav.open .header__burger-btn span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav.open .header__burger-btn span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}
+
+.nav.open .body{
+  overflow: hidden;
+}
+
+.nav.open .menu {
+  @include media(778px) {
+    transform: translateX();
+    visibility: visible;
+  }
+}
+
+.nav__content-ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__content-li:not(:last-child) {
+  @include media(778px) {
+    margin-right: 0;
+  }
+}

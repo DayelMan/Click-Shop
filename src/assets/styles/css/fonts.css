@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('../../fonts/Inter-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'BrunoAce-Regular';
+  src: url('../../fonts/BrunoAce-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Kanit-Regular';
+  src: url('../../fonts/Kanit-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Questrial-Regular';
+  src: url('../../fonts/Questrial-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Kanit-Light';
+  src: url('../../fonts/Kanit-Light.ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Kanit-ExtraBold';
+  src: url('../../fonts/Kanit-ExtraBold.ttf');
+  font-weight: 800;
+}

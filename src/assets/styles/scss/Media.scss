@@ -1,0 +1,244 @@
+$IR: Inter-Regular;
+$BAR: BrunoAce-Regular;
+$KR: Kanit-Regular;
+$QR: Questrial-Regular;
+$KL: Kanit-Light;
+$KEB: Kanit-ExtraBold;
+$text: #121211;
+
+@mixin media($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
+.uls {
+  @include media(1560px) {
+    flex-direction: column;
+  }
+  @include media(1024px) {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+.shopping__card-img img {
+  @include media(870px) {
+    width: 100px !important;
+  }
+  @include media(768px) {
+    width: 133px !important;
+  }
+}
+
+.shopping__card_content {
+  @include media(768px) {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
+
+.shopping__card-price {
+  @include media(768px) {
+    margin-left: unset;
+    margin-right: unset;
+  }
+}
+.shopping__card-total_price {
+  @include media(768px) {
+    margin-left: unset !important;
+  }
+}
+
+.shopping__card-delete {
+  @include media(768px) {
+    margin-left: unset !important;
+  }
+}
+
+.shopping__card-title {
+  @include media(870px) {
+    font-size: 15px !important;
+  }
+}
+
+
+.shopping__cardses {
+  @include media(1024px) {
+    width: 600px !important;
+  }
+  @include media(630px) {
+    width: 400px !important;
+    
+  }
+  @include media(420px) {
+    width: 317px !important;
+    
+  }
+}
+
+.shopping__cardses-item{
+  @include media(768px){
+      font-size: 20px !important;
+  }
+  @include media(420px){
+      font-size: 15px !important;
+  }
+}
+
+
+
+.lines {
+  @include media(1024px) {
+    width: 600px !important;
+  }
+  @include media(630px) {
+   width: 400px !important;
+  }
+  @include media(420px) {
+   width: 317px !important;
+  }
+}
+
+.shopping__card {
+  @include media(1024px) {
+    width: 850px !important;
+  }
+  @include media(1024px) {
+    width: 760px !important;
+  }
+  @include media(768px) {
+    width: 500px !important;
+  }
+  @include media(500px) {
+    width: 342px !important;
+  }
+  @include media(350px) {
+    width: 318px !important;
+  }
+}
+
+.popapm  .payment__content{
+  overflow: hidden;
+}
+
+.btn_trash{
+  border: none;
+  @include media(570px){
+    width: 353px !important;
+  }
+  @include media(400px){
+    width: 251px !important;
+  }
+}
+
+.shopping__card-total-items{
+  @include media(532px){
+    width: 388px ;
+  }
+  @include media(420px){
+    width: 301px;
+  }
+  @include media(350px){
+    width: 249px;
+  }
+}
+
+.line{
+  @include media(420px){
+    width: 301px;
+  }
+  @include media(350px) {
+    width: 280px !important;
+  }
+}
+
+.shopping__card-price{
+  margin-bottom: 20px;
+}
+
+.paument__items {
+  @include media(1600px){
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.payment__inputs-items-item input{
+  @include media(992px){
+    width: 240px;
+  }
+  
+}
+
+.payment__inputs-items{
+  @include media(760px){
+     grid-template-columns: repeat(1, 1fr); 
+  }
+}
+
+.payment__inputs-items-item {
+  @include media(768px){
+    width: 320px
+  }
+  @include media(760px){
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.input__payment{
+  width: 175px;
+}
+
+.payment__info{
+  width: 500px;
+  @include media(440px){
+    width: 230px;
+  }
+}
+
+
+.payment__products-content{
+ @include media(768px){
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+ }
+}
+
+.payment__products-content-sku-title{
+  @include media(768px){
+    width: unset !important;
+    margin-right: unset !important;
+    margin-top: 12px;
+   }
+}
+.payment__products-content-sku-skus{
+  @include media(768px){
+    width: unset;
+    margin-right: unset;
+    margin-top: 12px !important;  
+   }
+}
+
+.payment__products-content-total-products{
+  @include media(768px){
+    margin-right: unset !important;
+  }
+}
+.payment__order {
+  @include media(330px){
+    margin-left: unset; 
+  }
+}
+
+.extra__product{
+  @include media(400px){
+    width: 350px !important;
+  }
+}
