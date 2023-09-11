@@ -10,5 +10,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  publicPath: process.env.NODE_ENV === 'production' ? 'MyShop' : '/'
+  publicPath: process.env.NODE_ENV === 'production' ? 'Click-Shop' : '/' 
 })
