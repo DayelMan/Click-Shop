@@ -5,14 +5,6 @@ import roters from "./router/index.js";
 import "@/assets/styles/scss/main.scss";
 import NavbarVue from "./components/Navbar.vue";
 
-const isOpen = ref(false);
-
-const closeMenu = () => {
-  isOpen.value = false;
-};
-
-roters.afterEach(closeMenu);
-
 const app = createApp(App);
 app.use(createPinia());
 app.use(roters);

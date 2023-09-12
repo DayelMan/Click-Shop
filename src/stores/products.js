@@ -67,7 +67,6 @@ export const useProductStore = defineStore("productStore", {
           totalQuantity = 0;
         }
       }
-      console.log(totalQuantity);
       return totalQuantity;
     },
 

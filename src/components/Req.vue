@@ -3,29 +3,29 @@
        <div class="main__products container alls__extra">
         <div class="main__product" v-for="extraProduct in extraProducts">
           <div class="main__product-popap extra__productses">
-            <RouterLink
-              :to="`/productCard/${extraProduct.id}`"
-              @click="openProduct(extraProduct.id)"
-              class="kls"
-            >
+              <RouterLink
+                :to="`/productCard/${extraProduct.id}`"
+                @click="openProduct(extraProduct.id)"
+                class="kls"
+              >
+                <img
+                  :src="extraProduct.thumbnail"
+                  alt=""
+                  class="main__products-img"
+                />
+              </RouterLink>
               <img
-                :src="extraProduct.thumbnail"
+                src="../assets/img/cart.svg"
                 alt=""
-                class="main__products-img"
+                class="main__product-popap-img"
               />
-            </RouterLink>
-            <img
-              src="../assets/img/cart.svg"
-              alt=""
-              class="main__product-popap-img"
-            />
-            <img
-              src="../assets/img/like.svg"
-              alt=""
-              class="main__product-popap-img-two" 
-              @click="likeedProduct($event, product)"
-              :class="{ activees: getProduct().liked == true }"
-            />
+              <img
+                src="../assets/img/like.svg"
+                alt=""
+                class="main__product-popap-img-two" 
+                @click="likeedProduct($event, product)"
+                :class="{ activees: getProduct().liked == true }"
+              />
           </div>
 
           <p class="main__product-text">{{ extraProduct.title }}</p>

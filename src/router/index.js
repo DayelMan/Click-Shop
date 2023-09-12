@@ -1,6 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "@/views/Home.vue"
-import ProductCard from "@/views/Demo.vue"
+import Home from "@/views/Home.vue";
+import ProductCard from "@/views/Demo.vue";
+import Like from "@/views/Like.vue";
+import trash from "@/views/Trash.vue";
+import payment from "@/views/Payment.vue";
 
 const roters = createRouter({
   history: createWebHistory(),
@@ -11,30 +14,21 @@ const roters = createRouter({
       name: "ProductCard",
       component: ProductCard,
     },
-      {
-        path: "/Like",
-        name: "Likes",
-        component: () =>
-            import(
-              "@/views/Like.vue"
-            ),
-      },
-      {
-        path: "/trash",
-        name: "Trash",
-        component: () =>
-            import(
-              "@/views/Trash.vue"
-            ),
-      },
-      {
-        path: "/payment",
-        name: "payment",
-        component: () =>
-            import(
-              "@/views/Payment.vue"
-            ),
-      },
+    {
+      path: "/Like",
+      name: "Likes",
+      component: Like,
+    },
+    {
+      path: "/trash",
+      name: "Trash",
+      component: trash,
+    },
+    {
+      path: "/payment",
+      name: "payment",
+      component: payment,
+    },
   ],
 });
 
