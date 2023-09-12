@@ -81,7 +81,7 @@ const setActiveLink = (link) => {
 };
 
 function likeedProduct(event, product) {
-  event.target.classList.toggle("active");
+  event.target.classList.toggle("activees");
   getProduct().liked = !getProduct().liked;
   localStorage.setItem("productStore", JSON.stringify(productStore));
 }
