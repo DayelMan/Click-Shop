@@ -128,36 +128,17 @@ const setActiveLink = (link) => {
   activeLink.value = link;
 };
 
-// function likesProduct(event, product) {
-//   event.target.classList.add("active");
-//   productStore.liked = !productStore.liked;
-//   localStorage.setItem("productStore", JSON.stringify(productStore));
-// }
-
-// productStore.getProducts();
-// new filter
-
-// let getIndexStore = computed(() => productStore.resArray);
+// Filter
 let sortedItems = ref(null);
-// const allProds = ref();
 
 const filterGoods = (e) => {
   sortedItems.value = productStore.products.filter(
     (item) => item.category == categories[e].toLowerCase()
   );
-  // console.log(sortedItems.value);
 };
 
-// onMounted(async () => {
-//     await productStore.getProducts()
-//     allProds.value = getIndexStore.value
-
-// })
-
-// console.log(filterGoods(k));
 
 // Old Filter
-
 const sortType = ref("");
 const sortDirection = ref("frg");
 const productPerPage = ref(12);
