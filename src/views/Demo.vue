@@ -143,7 +143,6 @@ function increase(product) {
     this.getProduct().discountSum = this.getProduct().getDiscountSum;
     console.log(getProduct());
     console.log(products);
-
     localStorage.setItem("productStore", JSON.stringify(productStore));
   }
 }

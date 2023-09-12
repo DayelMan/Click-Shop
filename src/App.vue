@@ -7,7 +7,5 @@
 <script setup>
 import Navbar from "./components/Navbar.vue";
 import Footer from "./components/Footer.vue";
-import { onMounted } from "vue";
-// import { useProductStore } from "./stores/products";
-
+import { onMounted } from "vue";  
 </script>

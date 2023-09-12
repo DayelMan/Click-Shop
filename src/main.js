@@ -3,13 +3,39 @@ import { createPinia } from "pinia";
 import App from "./App.vue";
 import roters from "./router/index.js";
 import "@/assets/styles/scss/main.scss";
-import NavbarVue from "./components/Navbar.vue";
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from 'swiper/vue';
+
+// Import Swiper styles
+import 'swiper/css';
+
+import 'swiper/css/pagination';
+
+
+// import required modules
+import { Pagination } from 'swiper/modules';
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    return {
+      modules: [Pagination],
+    };
+  },
+};
 
 const app = createApp(App);
 app.use(createPinia());
 app.use(roters);
 app.mount("#app");
+app.component('Swiper', Swiper);
+app.component('SwiperSlide', SwiperSlide);
 
+
+// БУРГЕР
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("burger").addEventListener("click", function () {
     document.querySelector(".nav").classList.toggle("open");
