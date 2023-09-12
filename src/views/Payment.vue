@@ -60,10 +60,10 @@
                   type="text"
                   class="input__payment"
                   placeholder="Appartment, suite, unit, etc. (optional)"
-                  v-bind="town"
+                  v-bind="country"
                 />
                 <pre class="pre">{{
-                  errors.adress ? "Нельзя пустым оставлять!" : ""
+                  errors.country ? "Нельзя пустым оставлять!" : ""
                 }}</pre>
               </div>
               <div class="payment__inputs-items-item">
@@ -72,10 +72,10 @@
                   type="text"
                   class="input__payment"
                   placeholder="Email"
-                  v-bind="adress"
+                  v-bind="email"
                 />
                 <pre class="pre">{{
-                  errors.adress ? "Email должен содержать @gmail.com" : ""
+                  errors.email ? "Email должен содержать @gmail.com" : ""
                 }}</pre>
               </div>
               <div class="payment__inputs-items-item">
